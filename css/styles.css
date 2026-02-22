@@ -51,8 +51,9 @@ body::after {
   background:
     radial-gradient(
       circle at center,
-      rgba(130, 40, 120, 0.22) 0%,
+      rgba(130, 40, 120, 0..3) 30%,
       rgba(0, 0, 0, 0.70) 65%
     );
   pointer-events: none;
 }
+
