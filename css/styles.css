@@ -1,0 +1,44 @@
+/* ===== Base Reset ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0e0e11; /* Deep charcoal */
+  color: white;
+}
+
+/* ===== Layout ===== */
+.hero-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-8%);
+  text-align: center;
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subline {
+  margin-bottom: 2rem;
+}
+
+/* ===== Button ===== */
+.cta-button {
+  padding: 0.75rem 2rem;
+}
+
+/* ===== Texture Layer ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('../assets/damask.png');
+  background-size: 600px;
+  background-repeat: repeat;
+  opacity: 0.07;
+  pointer-events: none;
+}
