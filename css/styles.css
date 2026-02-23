@@ -31,7 +31,7 @@ h1 {
   padding: 0.75rem 2rem;
 }
 
-/* ===== Texture Layer ===== */
+/* ===== Texture Layer =====
 body::before {
   content: "";
   position: fixed;
@@ -41,7 +41,7 @@ body::before {
   background-repeat: repeat;
   opacity: 0.07;
   pointer-events: none;
-}
+} */
 
 /* ===== Purple Lighting Layer ===== */
 body::after {
@@ -56,6 +56,7 @@ body::after {
   );
   pointer-events: none;
 }
+
 
 
 
