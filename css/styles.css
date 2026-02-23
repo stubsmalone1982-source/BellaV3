@@ -67,5 +67,19 @@ body::after {
   pointer-events: none;
 }
 
+body {
+  position: relative;
+}
+
+body::before,
+body::after {
+  z-index: -1;
+}
+
+main,
+.container {
+  position: relative;
+  z-index: 1;
+}
 
 
