@@ -1,4 +1,4 @@
-OK/* ===== Base Reset ===== */
+/* ===== Base Reset ===== */
 body {
   margin: 0;
   min-height: 100vh;
@@ -31,48 +31,41 @@ h1 {
   padding: 0.75rem 2rem;
 }
 
-/* ===== Texture Layer =====*/
+/* ===== Texture Layer ===== */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background-image: url('../assets/damask.png');
-  background-size: 600px;
+  background-size: 300px;
   background-repeat: repeat;
-  opacity: 0.09;
+  opacity: 0.07;
   pointer-events: none;
-} 
+}
 
 /* ===== Purple Lighting Layer ===== */
-body::before {
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  body::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
-    /* Inner Glow */
     radial-gradient(
       circle at center,
-      rgba(220, 170, 255, 0.35) 0%,
-      rgba(220, 170, 255, 0.15) 18%,
-      transparent 25%
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.5) 10%,
+      transparent 20%
     ),
-
-    /* Plum Ring */
     radial-gradient(
       circle at center,
-      rgba(130, 40, 120, 0.45) 25%,
-      rgba(130, 40, 120, 0.35) 45%,
+      rgba(130, 40, 120, 0.5) 30%,
       rgba(0, 0, 0, 0.9) 75%
     );
-
   pointer-events: none;
-}none;
 }
-
-
-
-
-
 
 
 
