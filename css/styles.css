@@ -44,18 +44,31 @@ body::before {
 } */
 
 /* ===== Purple Lighting Layer ===== */
-body::after {
+body::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
-  radial-gradient(
-    circle at center,
-    rgba(130, 40, 120, 0.28) 0%,
-    rgba(0, 0, 0, 0.82) 60%
-  );
+    /* Inner Glow */
+    radial-gradient(
+      circle at center,
+      rgba(220, 170, 255, 0.35) 0%,
+      rgba(220, 170, 255, 0.15) 18%,
+      transparent 25%
+    ),
+
+    /* Plum Ring */
+    radial-gradient(
+      circle at center,
+      rgba(130, 40, 120, 0.45) 25%,
+      rgba(130, 40, 120, 0.35) 45%,
+      rgba(0, 0, 0, 0.9) 75%
+    );
+
   pointer-events: none;
+}none;
 }
+
 
 
 
